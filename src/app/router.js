@@ -20,5 +20,10 @@ export const Routes = [
     path: '/contact',
     exact: true,
     component: React.lazy(()=>import('../pages/contact-us'))
-  }
+  },
+  {
+    path: '/pages',
+    exact: true,
+    component: React.lazy(()=>import('../pages/pages'))
+  },
 ];
