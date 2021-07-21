@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Input } from '../../../../common/components/input';
-import { TextArea } from '../../../../common/components/text-area';
-import { LinkButton } from '../../../../common/components/link-button';
-import { SectionHeader } from '../../../../common/components/section-header';
-import { Container } from '../../../../common/components/container';
-import { NoteParagraph } from '../../../../common/components/note-paragraph';
+import {Input} from '../../../../common/components/input';
+import {TextArea} from '../../../../common/components/text-area';
+import {LinkButton} from '../../../../common/components/link-button';
+import {SectionHeader} from '../../../../common/components/section-header';
+import {Container} from '../../../../common/components/container';
+import {NoteParagraph} from '../../../../common/components/note-paragraph';
 
 const SectionHeaderStyled = styled(SectionHeader)`
-  font-size: 65px; 
+  font-size: 65px;
   text-transform: none;
 `;
 
@@ -53,11 +53,10 @@ const IframeWrapper = styled.div`
 `;
 
 const ContainerStyled = styled(Container)`
-  
   flex-wrap: wrap;
   > * {
     flex-basis: 50%;
-    
+
     &:nth-child(3) {
       flex-basis: 100%;
     }
@@ -80,15 +79,15 @@ const LinkButtonWrapper = styled.div`
   padding-right: 10px;
 `;
 
-export function SectionContact () {
+export function SectionContact() {
   return (
     <>
       <Container direction="column">
         <SectionHeaderStyled>Kora Inc.</SectionHeaderStyled>
         <NoteParagraphWrapper>
           <NoteParagraph>
-            Arkitube has a goal of hand roasting the best coffee. They view specialty coffee as an art.The
-            company was founded by Makriv Ramev.
+            Arkitube has a goal of hand roasting the best coffee. They view specialty coffee as an art.The company was
+            founded by Makriv Ramev.
           </NoteParagraph>
         </NoteParagraphWrapper>
       </Container>
@@ -129,13 +128,11 @@ export function SectionContact () {
           <SubSectionHeader>Write to us!</SubSectionHeader>
           <ButtonsWrap>
             <ButtonsWrap>
-              <Input placeholder="Name"/>
-              <Input placeholder="Email"/>
+              <Input placeholder="Name" />
+              <Input placeholder="Email" />
             </ButtonsWrap>
             <TextAreaWrap>
-              <TextArea
-                placeholder="Actually I was pretty happy when I saw that you had to listen to a song to travel to moon but I was pretty shaken when they asked me to buy the song for 3M.. I mean that was ok.."
-              />
+              <TextArea placeholder="Actually I was pretty happy when I saw that you had to listen to a song to travel to moon but I was pretty shaken when they asked me to buy the song for 3M.. I mean that was ok.." />
               <LinkButtonWrapper>
                 <LinkButtonStyled>Send Message</LinkButtonStyled>
               </LinkButtonWrapper>
@@ -152,10 +149,9 @@ export function SectionContact () {
             frameBorder="0"
             allowFullScreen=""
             aria-hidden="false"
-            tabIndex="0">
-          </iframe>
+            tabIndex="0"
+          ></iframe>
         </IframeWrapper>
-
       </ContainerStyled>
     </>
   );

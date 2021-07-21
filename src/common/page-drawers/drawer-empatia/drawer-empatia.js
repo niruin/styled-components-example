@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { SectionSubBanner } from '../../page-sections/section-sub-banner';
-import { ExtendButton } from '../../components/extend-button';
-import { Container } from '../../components/container';
-import { SectionHeader } from '../../components/section-header';
-import { NoteParagraph } from '../../components/note-paragraph';
-import { colors, device } from '../../../styles/common';
+import {SectionSubBanner} from '../../page-sections/section-sub-banner';
+import {ExtendButton} from '../../components/extend-button';
+import {Container} from '../../components/container';
+import {SectionHeader} from '../../components/section-header';
+import {NoteParagraph} from '../../components/note-paragraph';
+import {colors, device} from '../../../styles/common';
 
 import sprite from '../../../assets/img/sprite.png';
 import bg from '../../../assets/img/contactbg.jpg';
@@ -32,7 +32,7 @@ const Root = styled.div`
 const AppBar = styled.div`
   background-color: white;
   color: black;
-  box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.2);
   min-height: 74px;
 `;
 
@@ -76,18 +76,19 @@ const WrapRubrics = styled.div`
   width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
-  
+
   > * {
     flex-basis: 30%;
-    
+
     @media ${device.mobileM} {
       flex-basis: 100%;
       margin: 10px 0;
     }
-    
-    &:last-child, &:nth-child(3n) {
+
+    &:last-child,
+    &:nth-child(3n) {
       flex-basis: 20%;
-      
+
       @media ${device.mobileM} {
         flex-basis: 50%;
       }
@@ -129,37 +130,33 @@ const NoteParagraphStyled = styled(NoteParagraph)`
 `;
 
 DrawerEmpatia.propTypes = {
-  onClose: PropTypes.func
+  onClose: PropTypes.func,
 };
 
-export function DrawerEmpatia ({ onClose }) {
+export function DrawerEmpatia({onClose}) {
   const handleClose = () => {
     if (onClose) {
       onClose();
     }
   };
 
-  function CloseButton () {
-    return <CloseBtn onClick={handleClose}/>;
+  function CloseButton() {
+    return <CloseBtn onClick={handleClose} />;
   }
 
   return (
     <Root>
       <AppBar>
-        <CloseButton/>
+        <CloseButton />
       </AppBar>
-      <SectionSubBanner
-        title="EMPATIA STUDIO"
-        bg={bg}
-        subTitle="For 78 Years, it cannot just be odds in favor!"
-      />
+      <SectionSubBanner title="EMPATIA STUDIO" bg={bg} subTitle="For 78 Years, it cannot just be odds in favor!" />
       <Container direction="column">
         <SectionHeaderStyled>Arkitube</SectionHeaderStyled>
         <NoteParagraphStyled>
           Arkitube has a goal of hand roasting the best coffee possible. They view roasting specialty coffee as an
           art.The company was founded by Gregor.
         </NoteParagraphStyled>
-        <MediumImage src={img6} alt="case"/>
+        <MediumImage src={img6} alt="case" />
         <WrapRubrics>
           <div>
             <NoteTitle>about client and brief</NoteTitle>
@@ -190,22 +187,22 @@ export function DrawerEmpatia ({ onClose }) {
               art. It was lorem but also ipsum who did that.
             </NoteParagraph>
           </div>
-          <MediumImage src={img1} alt="case"/>
+          <MediumImage src={img1} alt="case" />
         </WrapRubrics>
         <WrapRubrics>
           <div>
             <RubricHeader>Thought Process</RubricHeader>
             <NoteParagraph>
-              The clients goal was to widely address best coffee possible. They view roasting specialty.The first
-              thing he wanted to do was to get up in peace without being disturbed, to get dressed.
+              The clients goal was to widely address best coffee possible. They view roasting specialty.The first thing
+              he wanted to do was to get up in peace without being disturbed, to get dressed.
             </NoteParagraph>
           </div>
-          <MediumImage src={img8} alt="case"/>
+          <MediumImage src={img8} alt="case" />
         </WrapRubrics>
         <WrapRubrics>
-          <MediumImage src={img14} alt="case"/>
-          <MediumImage src={img15} alt="case"/>
-          <MediumImage src={img16} alt="case"/>
+          <MediumImage src={img14} alt="case" />
+          <MediumImage src={img15} alt="case" />
+          <MediumImage src={img16} alt="case" />
         </WrapRubrics>
         <WrapRubrics>
           <div>
@@ -214,21 +211,21 @@ export function DrawerEmpatia ({ onClose }) {
               The clients goal was to widely address best coffee possible. They view roasting specialty.
             </NoteParagraph>
             <TextBolder>
-              :: branding strategy <br/>
-              :: functional e-commerce <br/>
-              :: digital asset management <br/>
-              :: scope & approach <br/>
+              :: branding strategy <br />
+              :: functional e-commerce <br />
+              :: digital asset management <br />
+              :: scope & approach <br />
             </TextBolder>
           </div>
-          <MediumImage src={img9} alt="case"/>
+          <MediumImage src={img9} alt="case" />
         </WrapRubrics>
         <WrapRubrics>
-          <MediumImage src={img12} alt="case"/>
-          <MediumImage src={img13} alt="case"/>
+          <MediumImage src={img12} alt="case" />
+          <MediumImage src={img13} alt="case" />
         </WrapRubrics>
         <WrapRubrics>
-          <MediumImage src={img10} alt="case"/>
-          <MediumImage src={img11} alt="case"/>
+          <MediumImage src={img10} alt="case" />
+          <MediumImage src={img11} alt="case" />
         </WrapRubrics>
       </Container>
     </Root>

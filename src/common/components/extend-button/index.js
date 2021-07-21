@@ -1,1 +1,1 @@
-export { ExtendButton } from './extend-button';
+export {ExtendButton} from './extend-button';

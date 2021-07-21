@@ -1,1 +1,1 @@
-export { SectionServices } from './section-services';
+export {SectionServices} from './section-services';

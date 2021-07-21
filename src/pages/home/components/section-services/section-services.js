@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Container } from '../../../../common/components/container';
-import { ExtendButton } from '../../../../common/components/extend-button';
+import {Container} from '../../../../common/components/container';
+import {ExtendButton} from '../../../../common/components/extend-button';
 
-import { colors, device } from '../../../../styles/common';
+import {colors, device} from '../../../../styles/common';
 import services1 from '../../../../assets/img/services1.jpg';
 import services2 from '../../../../assets/img/services2.jpg';
 
@@ -16,18 +16,18 @@ const Root = styled.div`
 
 const IntroBlock = styled.div`
   flex-basis: 50%;
-  
+
   @media ${device.tablet} {
     flex-basis: 100%;
   }
 `;
 
-const IntroBlockChild = styled(IntroBlock).attrs(props => ({ img: props.img }))`
-  background: url(${props => props.img});
+const IntroBlockChild = styled(IntroBlock).attrs((props) => ({img: props.img}))`
+  background: url(${(props) => props.img});
   background-position: center;
   background-size: cover;
   height: 600px;
-  
+
   @media ${device.tablet} {
     min-height: 200px;
   }
@@ -37,7 +37,7 @@ const IntroBlockContent = styled.div`
   max-width: 620px;
   padding-bottom: 40px;
   padding: 90px;
-  
+
   @media ${device.tablet} {
     padding: 90px 0;
   }
@@ -78,7 +78,7 @@ const IntroBlockFourBricks = styled.div`
 
 const IntroBlockFourBrickUnit = styled.div`
   flex-basis: 50%;
-    
+
   @media ${device.tablet} {
     flex-basis: 100%;
   }
@@ -92,40 +92,34 @@ const IntroBlockFourBrickUnitParagraph = styled.p`
   color: ${colors.gray};
 `;
 
-export function SectionServices () {
+export function SectionServices() {
   return (
     <Root>
       <IntroBlock>
         <Container content="flex-end">
           <IntroBlockContent>
             <IntroBlockHeader>We Create Stuff </IntroBlockHeader>
-            <IntroBlockSubHeader>
-              And believe that the work we do is a reflection of what we are.
-            </IntroBlockSubHeader>
+            <IntroBlockSubHeader>And believe that the work we do is a reflection of what we are.</IntroBlockSubHeader>
             <IntroBlockParagraph>
               It took just as much effort to get back to where he had been earlier and was once more watching his legs
-              as
-              they struggled against each even harder than before, if that was possible, he could think of no once more
-              possible for him to stay in bed and that the most sensible
+              as they struggled against each even harder than before, if that was possible, he could think of no once
+              more possible for him to stay in bed and that the most sensible
             </IntroBlockParagraph>
             <ExtendButton>View our Work</ExtendButton>
           </IntroBlockContent>
         </Container>
       </IntroBlock>
 
-      <IntroBlockChild img={services1}/>
-      <IntroBlockChild img={services2}/>
+      <IntroBlockChild img={services1} />
+      <IntroBlockChild img={services2} />
 
       <IntroBlock>
         <Container>
           <IntroBlockContent>
-            <IntroBlockFourHeader>
-              From Pro VFX to simple Photo
-              Retouching, we’re Kickass!
-            </IntroBlockFourHeader>
+            <IntroBlockFourHeader>From Pro VFX to simple Photo Retouching, we’re Kickass!</IntroBlockFourHeader>
             <IntroBlockSubHeader>
-              We are a team of eight sharing our expertise in Professional level
-              Animation to Branding, Packaging and pretty Photography
+              We are a team of eight sharing our expertise in Professional level Animation to Branding, Packaging and
+              pretty Photography
             </IntroBlockSubHeader>
             <IntroBlockFourBricks>
               <IntroBlockFourBrickUnit>

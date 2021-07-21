@@ -1,1 +1,1 @@
-export { SectionTeam } from './section-team';
+export {SectionTeam} from './section-team';

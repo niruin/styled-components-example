@@ -1,1 +1,1 @@
-export { SectionClients } from './section-clients';
+export {SectionClients} from './section-clients';

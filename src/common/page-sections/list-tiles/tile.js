@@ -1,35 +1,35 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { ActionButton } from '../../components/action-button';
-import { Modal } from '../../components/modal';
-import { DrawerEmpatia } from '../../page-drawers/drawer-empatia';
-import { colors } from '../../../styles/common';
+import {ActionButton} from '../../components/action-button';
+import {Modal} from '../../components/modal';
+import {DrawerEmpatia} from '../../page-drawers/drawer-empatia';
+import {colors} from '../../../styles/common';
 
-const Root = styled.div.attrs(props => ({
+const Root = styled.div.attrs((props) => ({
   level: props.level,
-  img: props.img
+  img: props.img,
 }))`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 10px;
-  height: ${props => props.level ? '200px' : '400px'};
-  background-image: url(${props => props.img});
+  height: ${(props) => (props.level ? '200px' : '400px')};
+  background-image: url(${(props) => props.img});
 `;
 
 const InnerBlock = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
   transition: opacity 0.4s ease-out;
 
   &:hover {
     opacity: 1;
-    transition: opacity 0.4s ease-out
+    transition: opacity 0.4s ease-out;
   }
 `;
 
@@ -65,7 +65,7 @@ const Slide = styled.div`
   margin: auto;
   display: flex;
   justify-content: center;
-  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
   max-width: 100%;
 `;
 
@@ -75,10 +75,10 @@ const SlideImg = styled.img`
 
 Tile.propTypes = {
   level: PropTypes.bool,
-  tile: PropTypes.object
+  tile: PropTypes.object,
 };
 
-export function Tile ({ level, tile }) {
+export function Tile({level, tile}) {
   const [isOpenModal, toggleModal] = useState(false);
   const [isOpenDrawer, toggleDrawer] = useState(false);
 
@@ -107,13 +107,13 @@ export function Tile ({ level, tile }) {
           <TileWrapButtons>
             <ActionButton open={isOpenDrawer} type="link" onClick={handleShowDrawer}>
               <Modal onClose={handleCloseDrawer} drawer={true}>
-                <DrawerEmpatia onClose={handleCloseDrawer}/>
+                <DrawerEmpatia onClose={handleCloseDrawer} />
               </Modal>
             </ActionButton>
             <ActionButton open={isOpenModal} onClick={handleShowModal}>
               <Modal onClose={handleCloseModal}>
                 <Slide>
-                  <SlideImg src={tile.path} alt="img"/>
+                  <SlideImg src={tile.path} alt="img" />
                 </Slide>
               </Modal>
             </ActionButton>

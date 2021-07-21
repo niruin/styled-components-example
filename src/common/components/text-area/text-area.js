@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { colors } from '../../../styles/common';
+import {colors} from '../../../styles/common';
 
 export const TextArea = styled.textarea`
   border: none;
@@ -23,5 +23,5 @@ export const TextArea = styled.textarea`
 `;
 
 TextArea.propTypes = {
-  placeholder: PropTypes.string
+  placeholder: PropTypes.string,
 };

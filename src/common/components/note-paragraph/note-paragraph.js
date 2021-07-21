@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from '../../../styles/common';
+import {colors} from '../../../styles/common';
 
 export const NoteParagraph = styled.p`
   color: ${colors.gray};

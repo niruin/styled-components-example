@@ -11,48 +11,48 @@ export const tiles = [
     path: img1,
     header: 'empatia studio',
     description: 'Branding, Identity, Stationary',
-    link: 'link'
+    link: 'link',
   },
   {
     path: img2,
     header: 'empatia studio',
     description: 'Branding, Identity, Stationary',
-    link: 'link'
+    link: 'link',
   },
   {
     path: img4,
     header: 'empatia studio',
     description: 'Branding, Identity, Stationary',
-    link: 'link'
+    link: 'link',
   },
   {
     path: img3,
     header: 'empatia studio',
     description: 'Branding, Identity, Stationary',
-    link: 'link'
+    link: 'link',
   },
   {
     path: img6,
     header: 'empatia studio',
     description: 'Branding, Identity, Stationary',
-    link: 'link'
+    link: 'link',
   },
   {
     path: img5,
     header: 'empatia studio',
     description: 'Branding, Identity, Stationary',
-    link: 'link'
+    link: 'link',
   },
   {
     path: img7,
     header: 'empatia studio',
     description: 'Branding, Identity, Stationary',
-    link: 'link'
+    link: 'link',
   },
   {
     path: img3,
     header: 'empatia studio',
     description: 'Branding, Identity, Stationary',
-    link: 'link'
-  }
+    link: 'link',
+  },
 ];

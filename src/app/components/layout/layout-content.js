@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { device } from '../../../styles/common';
+import {device} from '../../../styles/common';
 
 const Root = styled.div`
   padding-top: 88px;
@@ -13,9 +13,9 @@ const Root = styled.div`
 `;
 
 LayoutContent.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
-export function LayoutContent ({ ...rest }) {
-  return <Root { ...rest } />;
+export function LayoutContent({...rest}) {
+  return <Root {...rest} />;
 }

@@ -1,1 +1,1 @@
-export { SectionContact } from './section-contact';
+export {SectionContact} from './section-contact';

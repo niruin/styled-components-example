@@ -14,12 +14,12 @@ function NotFound() {
 
 function RootRouter() {
   return (
-    <Suspense fallback={<PageLoader/>}>
+    <Suspense fallback={<PageLoader />}>
       <Switch>
         {Routes.map(({path, exact, component}) => (
-          <Route key={path} path={path} exact={exact} component={component}/>
+          <Route key={path} path={path} exact={exact} component={component} />
         ))}
-        <Route component={NotFound}/>
+        <Route component={NotFound} />
       </Switch>
     </Suspense>
   );
@@ -28,11 +28,11 @@ function RootRouter() {
 export function App() {
   return (
     <>
-      <LayoutHeader/>
+      <LayoutHeader />
       <LayoutContent>
-        <RootRouter/>
+        <RootRouter />
       </LayoutContent>
-      <LayoutFooter/>
+      <LayoutFooter />
     </>
   );
 }

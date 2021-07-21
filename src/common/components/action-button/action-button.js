@@ -9,12 +9,12 @@ ActionButton.propTypes = {
   type: PropTypes.string,
   open: PropTypes.bool,
   children: PropTypes.node,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 const Fab = styled.svg`
-  background-image: url(${props => props.type === 'link' ? link : search});
-  transform: rotate(${props => props.type === 'link' ? 90 : 0}deg);
+  background-image: url(${(props) => (props.type === 'link' ? link : search)});
+  transform: rotate(${(props) => (props.type === 'link' ? 90 : 0)}deg);
   background-size: 12px;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,16 +23,16 @@ const Fab = styled.svg`
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 40px;
   cursor: pointer;
-  
+
   &:hover {
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
   }
 `;
 
-export function ActionButton ({ type, open, children, onClick }) {
+export function ActionButton({type, open, children, onClick}) {
   return (
     <>
-      <Fab onClick={onClick} aria-label="edit" type={type}/>
+      <Fab onClick={onClick} aria-label="edit" type={type} />
       {open && children}
     </>
   );

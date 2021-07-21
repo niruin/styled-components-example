@@ -1,1 +1,1 @@
-export { SectionArtwork } from './section-artwork';
+export {SectionArtwork} from './section-artwork';

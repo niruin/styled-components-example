@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Card } from '../../components/card';
-import { Container } from '../../components/container';
-import { SectionHeader } from '../../components/section-header';
+import {Card} from '../../components/card';
+import {Container} from '../../components/container';
+import {SectionHeader} from '../../components/section-header';
 
 const Root = styled.div`
   padding: 100px 0;
@@ -16,7 +16,7 @@ const SectionWrapperCards = styled.div`
   flex-wrap: wrap;
 `;
 
-export function SectionPricing () {
+export function SectionPricing() {
   return (
     <Root>
       <Container direction="column">

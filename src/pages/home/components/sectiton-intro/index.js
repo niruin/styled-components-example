@@ -1,1 +1,1 @@
-export { SectionIntro } from './section-intro';
+export {SectionIntro} from './section-intro';

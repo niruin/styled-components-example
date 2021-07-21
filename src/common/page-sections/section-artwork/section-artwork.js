@@ -1,18 +1,18 @@
 import React from 'react';
 
-import { SectionHeader } from '../../components/section-header';
-import { Container } from '../../components/container';
-import { ListTiles } from '../list-tiles';
+import {SectionHeader} from '../../components/section-header';
+import {Container} from '../../components/container';
+import {ListTiles} from '../list-tiles';
 
-import { tiles } from './consts';
+import {tiles} from './consts';
 
-export function SectionArtwork () {
+export function SectionArtwork() {
   return (
     <div>
       <Container>
         <SectionHeader>Artwork</SectionHeader>
       </Container>
-      <ListTiles tiles={tiles}/>
+      <ListTiles tiles={tiles} />
     </div>
   );
 }

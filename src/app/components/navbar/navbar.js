@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { NavbarItem } from './navbar-item';
-import { Container } from '../../../common/components/container';
+import {NavbarItem} from './navbar-item';
+import {Container} from '../../../common/components/container';
 
-import { device } from '../../../styles/common';
+import {device} from '../../../styles/common';
 
 import logo from '../../../assets/img/logo.png';
 import hamburger from '../../../assets/img/hamburger.png';
@@ -16,8 +16,8 @@ const AppBar = styled.div`
   z-index: 1;
   background-color: white;
   color: black;
-  box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.2);
-  
+  box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.2);
+
   @media ${device.tablet} {
     position: static;
   }
@@ -39,7 +39,7 @@ const Hamburger = styled.img`
   margin: 15px auto 12px;
   background-repeat: no-repeat;
   cursor: pointer;
-  
+
   @media ${device.tablet} {
     display: block;
   }
@@ -50,9 +50,9 @@ const WrapperNavbarItems = styled.div`
   justify-content: flex-end;
   flex-direction: row;
   width: 100%;
-  
+
   @media ${device.tablet} {
-    display: ${props => props.open ? 'flex' : 'none'};
+    display: ${(props) => (props.open ? 'flex' : 'none')};
     flex-direction: column;
   }
 `;
@@ -63,19 +63,19 @@ const DropOutBlockStyle = styled.div`
   font-size: 14px;
   font-family: Merriweather, serif;
 
-  background-color: rgba(255,255,255,1);
-  color: rgba(0,0,0,1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
   transition: color, background-color 0.5s linear;
   cursor: pointer;
 
   &:hover {
-    background-color: rgba(0,0,0,0.7);
-    color: rgba(255,255,255,1);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 1);
     transition: color, background-color 0.5s linear;
   }
 `;
 
-export function Navbar () {
+export function Navbar() {
   const [widthScreen, setWidthScreen] = useState(window.document.body.offsetWidth);
   const [isShowMenu, toggleIsShowMenu] = useState(false);
   const widthScroll = 17;
@@ -94,18 +94,18 @@ export function Navbar () {
 
   DropOutBlock.propTypes = {
     children: PropTypes.node,
-    onClose: PropTypes.func
+    onClose: PropTypes.func,
   };
 
-  function DropOutBlock ({ children }) {
+  function DropOutBlock({children}) {
     return <DropOutBlockStyle onTouchEnd={handleCloseMenu}>{children}</DropOutBlockStyle>;
   }
 
   return (
     <AppBar>
       <Container justify="space-between">
-        <Logo/>
-        <Hamburger widthScreen={widthScreen} onClick={toggleShowMenu} src={hamburger}/>
+        <Logo />
+        <Hamburger widthScreen={widthScreen} onClick={toggleShowMenu} src={hamburger} />
         <WrapperNavbarItems widthScreen={widthScreen} open={isShowMenu}>
           <NavbarItem path="/" title="home">
             <DropOutBlock path="/"> Home</DropOutBlock>
@@ -141,7 +141,7 @@ export function Navbar () {
             <DropOutBlock path="/">Index1</DropOutBlock>
             <DropOutBlock path="/">Index2</DropOutBlock>
           </NavbarItem>
-          <NavbarItem path="/contact" title="contact us"/>
+          <NavbarItem path="/contact" title="contact us" />
         </WrapperNavbarItems>
       </Container>
     </AppBar>

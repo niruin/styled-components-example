@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { colors } from '../../../styles/common';
+import {colors} from '../../../styles/common';
 
 export const ActionCardPopup = styled.div`
   position: absolute;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import banner from '../../../assets/img/services2.jpg';
-import { Container } from '../../components/container';
+import {Container} from '../../components/container';
 
 const Root = styled.div`
   padding: 80px 0;
@@ -29,10 +29,10 @@ const SubTitle = styled.p`
 SectionSubBanner.propTypes = {
   title: PropTypes.string,
   subTitle: PropTypes.string,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
-export function SectionSubBanner ({ title, subTitle, className }) {
+export function SectionSubBanner({title, subTitle, className}) {
   return (
     <Root>
       <Container direction="column">

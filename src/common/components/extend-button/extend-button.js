@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { colors } from '../../../styles/common';
+import {colors} from '../../../styles/common';
 
 export const ExtendButton = styled.div`
   font-size: 16px;
@@ -15,7 +15,7 @@ export const ExtendButton = styled.div`
   cursor: pointer;
   padding: 8px 0;
   transition: all 0.4s ease-in-out;
-  
+
   &:hover {
     padding: 8px 20px;
     color: ${colors.mediumGray};
@@ -25,5 +25,5 @@ export const ExtendButton = styled.div`
 
 ExtendButton.propTypes = {
   text: PropTypes.string,
-  className: PropTypes.string
+  className: PropTypes.string,
 };

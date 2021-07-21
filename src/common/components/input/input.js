@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { colors } from '../../../styles/common';
+import {colors} from '../../../styles/common';
 
 export const Input = styled.input`
   min-width: 270px;
@@ -21,5 +21,5 @@ export const Input = styled.input`
 `;
 
 Input.propTypes = {
-  placeholder: PropTypes.string
+  placeholder: PropTypes.string,
 };

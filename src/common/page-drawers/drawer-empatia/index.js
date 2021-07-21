@@ -1,1 +1,1 @@
-export { DrawerEmpatia } from './drawer-empatia';
+export {DrawerEmpatia} from './drawer-empatia';

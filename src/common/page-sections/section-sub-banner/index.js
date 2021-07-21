@@ -1,1 +1,1 @@
-export { SectionSubBanner } from './section-sub-banner';
+export {SectionSubBanner} from './section-sub-banner';

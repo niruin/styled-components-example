@@ -1,1 +1,1 @@
-export { PreviewSlider } from './preview-slider';
+export {PreviewSlider} from './preview-slider';

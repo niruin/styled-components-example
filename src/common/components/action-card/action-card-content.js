@@ -6,9 +6,9 @@ export const ActionCardContent = ({icon, children}) => {
 };
 
 const StyledActionCardContent = styled.div`
- margin-top: 165px;
-   
+  margin-top: 165px;
+
   &:before {
-    background-image: url(${props => props.icon});
+    background-image: url(${(props) => props.icon});
   }
 `;

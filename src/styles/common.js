@@ -5,7 +5,7 @@ export const colors = {
   black: '#292f33',
   mediumGray: '#959595',
   lightGray: '#8899a6',
-  superLightGray: '#F1F5F8'
+  superLightGray: '#F1F5F8',
 };
 
 const deviceSize = {
@@ -14,7 +14,7 @@ const deviceSize = {
   mobileL: 600,
   tablet: 768,
   laptop: 992,
-  desktop: 1280
+  desktop: 1280,
 };
 
 export const device = {
@@ -23,5 +23,5 @@ export const device = {
   mobileL: `(max-width: ${deviceSize.mobileL}px)`,
   tablet: `(max-width: ${deviceSize.tablet}px)`,
   laptop: `(max-width: ${deviceSize.laptop}px)`,
-  desktop: `(max-width: ${deviceSize.desktop}px)`
+  desktop: `(max-width: ${deviceSize.desktop}px)`,
 };

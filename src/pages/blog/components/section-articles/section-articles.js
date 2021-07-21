@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { LinkButton } from '../../../../common/components/link-button';
-import { Container } from '../../../../common/components/container';
-import { SectionHeader } from '../../../../common/components/section-header';
-import { NoteParagraph } from '../../../../common/components/note-paragraph';
-import { colors } from '../../../../styles/common';
+import {LinkButton} from '../../../../common/components/link-button';
+import {Container} from '../../../../common/components/container';
+import {SectionHeader} from '../../../../common/components/section-header';
+import {NoteParagraph} from '../../../../common/components/note-paragraph';
+import {colors} from '../../../../styles/common';
 
 const Block = styled.div`
   font-family: Roboto;
@@ -15,7 +15,7 @@ const Block = styled.div`
   max-width: 800px;
   margin: 20px auto;
   padding-bottom: 20px;
-  padding-top: 10px
+  padding-top: 10px;
 `;
 
 const BtnWrap = styled.div`
@@ -32,43 +32,43 @@ const NoteParagraphStyled = styled(NoteParagraph)`
   font-weight: bold;
 `;
 
-export function SectionArticles () {
+export function SectionArticles() {
   return (
     <Container direction="column">
       <Block>
         <SectionHeaderStyled>Product Design Unification Study: Mobile Web Framework</SectionHeaderStyled>
         <NoteParagraphStyled>By Admin</NoteParagraphStyled>
         <NoteParagraph>
-          It was a simple matter to throw off the covers; he only had to blow himself up a little and they fell off
-          by themselves. But it became difficult after that, especially as he was so exceptionally broad.
+          It was a simple matter to throw off the covers; he only had to blow himself up a little and they fell off by
+          themselves. But it became difficult after that, especially as he was so exceptionally broad.
         </NoteParagraph>
         <BtnWrap>
-          <LinkButton text="Continue Reading"/>
-          <LinkButton text="Share"/>
+          <LinkButton text="Continue Reading" />
+          <LinkButton text="Share" />
         </BtnWrap>
       </Block>
       <Block>
         <SectionHeaderStyled>Redefining lazy loading with Lazy Load XT</SectionHeaderStyled>
         <NoteParagraphStyled>By Admin</NoteParagraphStyled>
         <NoteParagraph>
-          It was a simple matter to throw off the covers; he only had to blow himself up a little and they fell off
-          by themselves. But it became difficult after that, especially as he was so exceptionally broad.
+          It was a simple matter to throw off the covers; he only had to blow himself up a little and they fell off by
+          themselves. But it became difficult after that, especially as he was so exceptionally broad.
         </NoteParagraph>
         <BtnWrap>
-          <LinkButton text="Continue Reading"/>
-          <LinkButton text="Share"/>
+          <LinkButton text="Continue Reading" />
+          <LinkButton text="Share" />
         </BtnWrap>
       </Block>
       <Block>
         <SectionHeaderStyled>An Exploration of Carousel usage on Mobile Websites</SectionHeaderStyled>
         <NoteParagraphStyled>By Admin</NoteParagraphStyled>
         <NoteParagraph>
-          It was a simple matter to throw off the covers; he only had to blow himself up a little and they fell off
-          by themselves. But it became difficult after that, especially as he was so exceptionally broad.
+          It was a simple matter to throw off the covers; he only had to blow himself up a little and they fell off by
+          themselves. But it became difficult after that, especially as he was so exceptionally broad.
         </NoteParagraph>
         <BtnWrap>
-          <LinkButton text="Continue Reading"/>
-          <LinkButton text="Share"/>
+          <LinkButton text="Continue Reading" />
+          <LinkButton text="Share" />
         </BtnWrap>
       </Block>
     </Container>

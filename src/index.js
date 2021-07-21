@@ -1,25 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router } from 'react-router-dom';
+import {Router} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
-import { App } from './app/app';
+import {App} from './app/app';
 
-import { history } from './common/routing';
-import { GlobalStyle } from './styles/global-style';
+import {history} from './common/routing';
+import {GlobalStyle} from './styles/global-style';
 
-function Root () {
+function Root() {
   return (
     <>
-      <GlobalStyle/>
+      <GlobalStyle />
       <Router history={history}>
-        <App/>
+        <App />
       </Router>
     </>
   );
 }
 
-ReactDOM.render(<Root/>, document.getElementById('root'));
+ReactDOM.render(<Root />, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

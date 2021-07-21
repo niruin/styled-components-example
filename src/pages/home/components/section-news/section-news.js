@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Container } from '../../../../common/components/container';
-import { LinkButton } from '../../../../common/components/link-button';
-import { SectionHeader } from '../../../../common/components/section-header';
+import {Container} from '../../../../common/components/container';
+import {LinkButton} from '../../../../common/components/link-button';
+import {SectionHeader} from '../../../../common/components/section-header';
 
-import { colors, device } from '../../../../styles/common';
+import {colors, device} from '../../../../styles/common';
 import img1 from '../../../../assets/img/news/img1.jpg';
 import img2 from '../../../../assets/img/news/img2.jpg';
 
@@ -29,14 +29,14 @@ const SectionBlockChild = styled.div`
   max-width: 550px;
   margin-bottom: 40px;
   padding-top: 20px;
-  
+
   @media ${device.tablet} {
     flex-basis: 100%;
   }
 `;
 
-const SectionBlockImg = styled(SectionBlockChild).attrs(props => ({ img: props.img }))`
-  background: url(${props => props.img});
+const SectionBlockImg = styled(SectionBlockChild).attrs((props) => ({img: props.img}))`
+  background: url(${(props) => props.img});
   background-position-y: center;
   background-size: cover;
   height: 155px;
@@ -63,7 +63,7 @@ const LinkButtonStyled = styled(LinkButton)`
   margin-right: 40px;
 `;
 
-export function SectionNews () {
+export function SectionNews() {
   return (
     <Root>
       <Container direction="column">
@@ -81,8 +81,8 @@ export function SectionNews () {
             </LinkBlock>
           </SectionBlockChild>
 
-          <SectionBlockImg img={img1}/>
-          <SectionBlockImg img={img2}/>
+          <SectionBlockImg img={img1} />
+          <SectionBlockImg img={img2} />
 
           <SectionBlockChild>
             <SubHeaderBlock>:: Top furniture designs that changed the World for good</SubHeaderBlock>

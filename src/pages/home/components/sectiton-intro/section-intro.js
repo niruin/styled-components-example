@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Container } from '../../../../common/components/container';
-import { ExtendButton } from '../../../../common/components/extend-button';
-import { colors, device } from '../../../../styles/common';
+import {Container} from '../../../../common/components/container';
+import {ExtendButton} from '../../../../common/components/extend-button';
+import {colors, device} from '../../../../styles/common';
 
 const Root = styled.div`
   text-align: center;
   padding: 120px 0;
-  
+
   @media ${device.mobileM} {
     padding: 120px 0 0;
   }
@@ -30,7 +30,7 @@ const ExtendButtonStyled = styled(ExtendButton)`
   margin: auto;
 `;
 
-export function SectionIntro () {
+export function SectionIntro() {
   return (
     <Root>
       <IntroBlock>

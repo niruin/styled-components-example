@@ -1,1 +1,1 @@
-export { SectionHistory } from './section-history';
+export {SectionHistory} from './section-history';

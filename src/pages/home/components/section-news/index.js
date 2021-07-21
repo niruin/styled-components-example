@@ -1,1 +1,1 @@
-export { SectionNews } from './section-news';
+export {SectionNews} from './section-news';

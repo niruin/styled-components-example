@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Container } from '../../../../common/components/container';
+import {Container} from '../../../../common/components/container';
 
 import american from '../../../../assets/img/clients/american.jpg';
 import twenty from '../../../../assets/img/clients/twenty.jpg';
@@ -28,7 +28,7 @@ const ContentBlock = styled.div`
   flex-wrap: wrap;
 `;
 
-const ContentBlockChild = styled.div.attrs(props => ({ url: props.img }))`
+const ContentBlockChild = styled.div.attrs((props) => ({url: props.img}))`
   width: 180px;
   height: 150px;
   opacity: 0.6;
@@ -40,25 +40,25 @@ const ContentBlockChild = styled.div.attrs(props => ({ url: props.img }))`
   }
 
   &:nth-child(n) {
-    background: url(${props => props.img});
+    background: url(${(props) => props.img});
     background-position-x: center;
     background-position-y: center;
     background-size: contain;
   }
 `;
 
-export function SectionClients () {
+export function SectionClients() {
   return (
     <Root>
       <Container direction="column">
         <Title>Some awesome clients</Title>
         <ContentBlock>
-          <ContentBlockChild img={american}/>
-          <ContentBlockChild img={twenty}/>
-          <ContentBlockChild img={dog}/>
-          <ContentBlockChild img={argentina}/>
-          <ContentBlockChild img={mason}/>
-          <ContentBlockChild img={room}/>
+          <ContentBlockChild img={american} />
+          <ContentBlockChild img={twenty} />
+          <ContentBlockChild img={dog} />
+          <ContentBlockChild img={argentina} />
+          <ContentBlockChild img={mason} />
+          <ContentBlockChild img={room} />
         </ContentBlock>
       </Container>
     </Root>

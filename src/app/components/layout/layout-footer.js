@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Container } from '../../../common/components/container';
-import { ExtendButton } from '../../../common/components/extend-button';
-import { LinkButton } from '../../../common/components/link-button';
+import {Container} from '../../../common/components/container';
+import {ExtendButton} from '../../../common/components/extend-button';
+import {LinkButton} from '../../../common/components/link-button';
 
-import { device } from '../../../styles/common';
+import {device} from '../../../styles/common';
 import logo from '../../../assets/img/logo_circle.png';
 
 const Root = styled.div`
-    padding: 100px 0 50px;
-    background-color: #f1f5f8 ;
+  padding: 100px 0 50px;
+  background-color: #f1f5f8;
 `;
 
 const SocialLinkBlock = styled.div`
@@ -23,16 +23,16 @@ const SocialLinkBlock = styled.div`
 const InfoBlock = styled.div`
   display: flex;
   justify-content: space-between;
-  
+
   @media ${device.tablet} {
     flex-direction: column;
   }
 `;
 
-const InfoBlockItem = styled.div.attrs(props => ({ align: props.align }))`
+const InfoBlockItem = styled.div.attrs((props) => ({align: props.align}))`
   width: 160px;
-  text-align: ${props => props.align === 'right' ? 'right' : 'left'};
-  
+  text-align: ${(props) => (props.align === 'right' ? 'right' : 'left')};
+
   @media all and (max-width: 769px) {
     width: 100%;
   }
@@ -55,7 +55,7 @@ const InfoBlockImg = styled.img`
   margin-top: 50px;
 `;
 
-export function LayoutFooter () {
+export function LayoutFooter() {
   return (
     <Root>
       <Container direction="column">
@@ -79,7 +79,7 @@ export function LayoutFooter () {
             <ExtendButton>Locate on map</ExtendButton>
           </InfoBlockItem>
           <div align="center">
-            <InfoBlockImg src={ logo } alt="logo"/>
+            <InfoBlockImg src={logo} alt="logo" />
           </div>
           <InfoBlockItem align="right">
             <InfoBlockHeader>contact info</InfoBlockHeader>

@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { LinkButton } from '../../components/link-button';
+import {LinkButton} from '../../components/link-button';
 
 import photo1 from '../../../assets/img/photo1.jpg';
 import photo2 from '../../../assets/img/photo2.jpg';
 import photo3 from '../../../assets/img/photo3.jpg';
-import { Container } from '../../components/container';
-import { colors } from '../../../styles/common';
-import { SectionHeader } from '../../components/section-header';
+import {Container} from '../../components/container';
+import {colors} from '../../../styles/common';
+import {SectionHeader} from '../../components/section-header';
 
 const Root = styled.div`
   padding: 80px 0;
@@ -89,13 +89,13 @@ const TeamBlockRightSubHeader = styled.h2`
   margin-bottom: 0;
 `;
 
-export function SectionTeam () {
+export function SectionTeam() {
   return (
     <Root>
       <Container direction="column">
         <SectionHeader>the pack</SectionHeader>
         <TeamBlock>
-          <TeamBlockLeft/>
+          <TeamBlockLeft />
           <TeamBlockRight>
             <TeamBlockRightDetail>
               <TeamBlockRightSubHeader>Mark Waugh</TeamBlockRightSubHeader>
@@ -113,11 +113,11 @@ export function SectionTeam () {
 
             <IntroBlockRightPersons>
               <div>
-                <IntroBlockRightPersonFirstImg/>
+                <IntroBlockRightPersonFirstImg />
                 <div>shane bond</div>
               </div>
               <div>
-                <IntroBlockRightPersonSecondImg/>
+                <IntroBlockRightPersonSecondImg />
                 <div>shane bond</div>
               </div>
             </IntroBlockRightPersons>

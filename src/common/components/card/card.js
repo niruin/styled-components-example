@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { LinkButton } from '../link-button';
-import { colors, device } from '../../../styles/common';
+import {LinkButton} from '../link-button';
+import {colors, device} from '../../../styles/common';
 
 const Root = styled.div`
   flex-basis: 33%;
@@ -14,14 +14,14 @@ const Root = styled.div`
   max-width: 360px;
   padding: 30px 0;
   box-sizing: border-box;
-  box-shadow: 0 0 0 rgba(0,0,0,0);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   transition: box-shadow 0.4s ease-in-out;
-  
+
   &:hover {
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.4s ease-in-out;
   }
-  
+
   @media ${device.tablet} {
     flex-basis: 100%;
     max-width: 100%;
@@ -70,7 +70,7 @@ const OrderBtn = styled.div`
 Card.propTypes = {
   title: PropTypes.string,
   price: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 const LinkButtonStyled = styled(LinkButton)`
@@ -78,16 +78,14 @@ const LinkButtonStyled = styled(LinkButton)`
   font-family: Merriweather;
 `;
 
-export function Card ({ title, price, children }) {
+export function Card({title, price, children}) {
   return (
     <Root>
       <HeadBlock>
         <TitleBlock>::{title}::</TitleBlock>
         <PriceBlock>${price}</PriceBlock>
       </HeadBlock>
-      <ConditionBlock>
-        {children}
-      </ConditionBlock>
+      <ConditionBlock>{children}</ConditionBlock>
       <OrderBtn>
         <LinkButtonStyled>Confirm Order</LinkButtonStyled>
       </OrderBtn>
