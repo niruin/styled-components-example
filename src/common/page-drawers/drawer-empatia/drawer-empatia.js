@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import { SectionSubBanner } from '../../page-sections/section-sub-banner';
 import { ExtendButton } from '../../components/extend-button';
 import { Container } from '../../components/container';
-import { SectionHeader } from '../../components/section-header/section-header';
-import { NoteParagraph } from '../../components/note-paragraph/note-paragraph';
+import { SectionHeader } from '../../components/section-header';
+import { NoteParagraph } from '../../components/note-paragraph';
 import { colors, device } from '../../../styles/common';
 
 import sprite from '../../../assets/img/sprite.png';

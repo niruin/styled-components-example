@@ -24,7 +24,6 @@ const ContentCard = styled.div`
 const PopupCard = styled.div`
   position: absolute;
   width: 100%;
-  height: 100%;
   height: 282px;
   background-color: ${props => props.dark === true ? colors.white : colors.superLightGray};
   top: 100%;
@@ -37,7 +36,6 @@ const PopupCard = styled.div`
 `;
 
 export const ActionCard = ({ dark, children }) => {
-  console.log(dark);
   return (
     <ContentCard dark={dark}>
       {children[0]}

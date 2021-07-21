@@ -42,7 +42,7 @@ const InfoBlockHeader = styled.h6`
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 20;
+  margin-bottom: 20px;
   font-family: Roboto, Helvetica, sans-serif;
 `;
 

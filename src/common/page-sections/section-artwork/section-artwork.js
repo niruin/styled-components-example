@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SectionHeader } from '../../components/section-header/section-header';
+import { SectionHeader } from '../../components/section-header';
 import { Container } from '../../components/container';
 import { ListTiles } from '../list-tiles';
 

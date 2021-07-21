@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { Card } from '../../components/card';
 import { Container } from '../../components/container';
-import { SectionHeader } from '../../components/section-header/section-header';
+import { SectionHeader } from '../../components/section-header';
 
 const Root = styled.div`
   padding: 100px 0;

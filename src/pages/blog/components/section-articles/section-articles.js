@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 import { LinkButton } from '../../../../common/components/link-button';
 import { Container } from '../../../../common/components/container';
-import { SectionHeader } from '../../../../common/components/section-header/section-header';
-import { NoteParagraph } from '../../../../common/components/note-paragraph/note-paragraph';
+import { SectionHeader } from '../../../../common/components/section-header';
+import { NoteParagraph } from '../../../../common/components/note-paragraph';
 import { colors } from '../../../../styles/common';
 
 const Block = styled.div`

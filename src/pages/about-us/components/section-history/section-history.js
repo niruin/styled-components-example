@@ -5,8 +5,8 @@ import { Container } from '../../../../common/components/container';
 
 import img from '../../../../assets/img/artwork/img1.jpg';
 import { colors } from '../../../../styles/common';
-import { SectionHeader } from '../../../../common/components/section-header/section-header';
-import { NoteParagraph } from '../../../../common/components/note-paragraph/note-paragraph';
+import { SectionHeader } from '../../../../common/components/section-header';
+import { NoteParagraph } from '../../../../common/components/note-paragraph';
 
 const ContentBlock = styled.div`
   flex-basis: 50%;

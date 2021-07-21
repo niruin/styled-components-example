@@ -8,15 +8,15 @@ import photo2 from '../../../assets/img/photo2.jpg';
 import photo3 from '../../../assets/img/photo3.jpg';
 import { Container } from '../../components/container';
 import { colors } from '../../../styles/common';
-import { SectionHeader } from '../../components/section-header/section-header';
+import { SectionHeader } from '../../components/section-header';
 
 const Root = styled.div`
-  padding 80px 0;
+  padding: 80px 0;
   text-align: center;
 `;
 
 const TeamBlock = styled.div`
-  font-size: 20;
+  font-size: 20px;
   line-height: 40px;
   font-weight: 100;
   font-family: MerriweatherLightItalic;

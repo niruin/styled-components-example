@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { Container } from '../../../../common/components/container';
 import { LinkButton } from '../../../../common/components/link-button';
-import { SectionHeader } from '../../../../common/components/section-header/section-header';
+import { SectionHeader } from '../../../../common/components/section-header';
 
 import { colors, device } from '../../../../styles/common';
 import img1 from '../../../../assets/img/news/img1.jpg';

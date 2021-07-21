@@ -7,7 +7,7 @@ import { ActionCard } from '../../../../common/components/action-card';
 import icon1 from '../../../../assets/img/card-icon/icon1.png';
 import icon2 from '../../../../assets/img/card-icon/icon2.png';
 import icon3 from '../../../../assets/img/card-icon/icon3.png';
-import { NoteParagraph } from '../../../../common/components/note-paragraph/note-paragraph';
+import { NoteParagraph } from '../../../../common/components/note-paragraph';
 
 const Root = styled.div`
   backgroundColor: '#f1f5f8'

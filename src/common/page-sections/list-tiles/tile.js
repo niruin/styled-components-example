@@ -65,7 +65,7 @@ const Slide = styled.div`
   margin: auto;
   display: flex;
   justify-content: center;
-  boxShadow: 0 0 12px rgba(0,0,0,0.5);
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
   max-width: 100%;
 `;
 

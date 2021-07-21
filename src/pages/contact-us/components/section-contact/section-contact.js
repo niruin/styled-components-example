@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import { Input } from '../../../../common/components/input';
 import { TextArea } from '../../../../common/components/text-area';
 import { LinkButton } from '../../../../common/components/link-button';
-import { SectionHeader } from '../../../../common/components/section-header/section-header';
+import { SectionHeader } from '../../../../common/components/section-header';
 import { Container } from '../../../../common/components/container';
-import { NoteParagraph } from '../../../../common/components/note-paragraph/note-paragraph';
+import { NoteParagraph } from '../../../../common/components/note-paragraph';
 
 const SectionHeaderStyled = styled(SectionHeader)`
   font-size: 65px; 

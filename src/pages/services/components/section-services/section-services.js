@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { Container } from '../../../../common/components/container';
 import { ActionCard } from '../../../../common/components/action-card';
-import { NoteParagraph } from '../../../../common/components/note-paragraph/note-paragraph';
+import { NoteParagraph } from '../../../../common/components/note-paragraph';
 
 import { colors } from '../../../../styles/common';
 
