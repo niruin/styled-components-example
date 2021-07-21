@@ -26,4 +26,9 @@ export const Routes = [
     exact: true,
     component: React.lazy(()=>import('../pages/pages'))
   },
+  {
+    path: '/portfolio',
+    exact: true,
+    component: React.lazy(()=>import('../pages/portfolio'))
+  },
 ];
