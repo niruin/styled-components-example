@@ -1,0 +1,2 @@
+(this.webpackJsonpmora=this.webpackJsonpmora||[]).push([[10],{62:function(t,e,i){"use strict";i.r(e),i.d(e,"default",(function(){return n}));i(1);var o=i(42),r=i(54),s=i(0);function n(){return Object(s.jsxs)("div",{children:[Object(s.jsx)(o.a,{title:"Portfolio 3 Col",subTitle:"We believe that the work we do is a reflection"}),Object(s.jsx)(r.a,{})]})}}}]);
+//# sourceMappingURL=10.d471bfd3.chunk.js.map

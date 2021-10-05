@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/pages/components/page/page.js"],"names":["Page"],"mappings":"4JAEO,SAASA,IACd,OAAO","file":"static/js/9.345dc910.chunk.js","sourcesContent":["import React from 'react';\r\n\r\nexport function Page() {\r\n  return <div>not content</div>;\r\n}\r\n"],"sourceRoot":""}
