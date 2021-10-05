@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router} from 'react-router-dom';
+import {HashRouter, Router} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 import {App} from './app/app';
@@ -12,9 +12,9 @@ function Root() {
   return (
     <>
       <GlobalStyle />
-      <Router history={history}>
+      <HashRouter history={history}>
         <App />
-      </Router>
+      </HashRouter>
     </>
   );
 }
