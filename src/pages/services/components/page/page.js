@@ -8,7 +8,7 @@ import {SectionServices} from '../section-services';
 export function Page() {
   return (
     <>
-      <SectionSubBanner title="About Us" subTitle="We believe that the work we do is a reflection" />
+      <SectionSubBanner title="Services" subTitle="We have Strategy for Serving Things Right" />
       <SectionServices />
       <SectionTestimonials />
       <SectionPricing />

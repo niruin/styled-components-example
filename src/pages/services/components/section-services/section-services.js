@@ -16,23 +16,26 @@ import icon6 from '../../../../assets/img/card-icon/icon6.png';
 
 const Root = styled.div`
   background-color: ${colors.superLightGray};
+  margin-top: -30px;
+  padding: 30px 0 20px;
 `;
 
 const CardTitle = styled.div`
-  margin-top: 90px;
   font-size: 16px;
+  margin: 90px auto;
   text-transform: uppercase;
   font-family: Roboto;
   font-weight: bold;
 
   &:before {
-    content: "''";
+    content: "";
     position: absolute;
     width: 50px;
     height: 50px;
+    margin-top: -60px;
+    left: 50%;
+    transform: translate(-50%);
     background-size: cover;
-    margin-top: -70px;
-    margin-left: 15px;
     background-repeat: no-repeat;
   }
 `;
@@ -41,7 +44,6 @@ const CardTitleIcon = styled(CardTitle).attrs((props) => ({img: props.img}))`
   margin-top: 165px;
 
   &:before {
-    margin-left: 22px;
     background-image: url(${(props) => props.img});
   }
 `;
@@ -54,7 +56,7 @@ const WrapperBlockCards = styled.div`
 `;
 
 const NoteParagraphStyled = styled(NoteParagraph)`
-  margin-top: 20px;
+  margin-top: -60px;
 `;
 
 const LoremIpsum = "I never thought I could feel so free doing it our way. Nothin's gonna turn us back.";
