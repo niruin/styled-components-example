@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {Container} from '../../../../common/components/container';
+import {NoteParagraph} from '../../../../common/components/note-paragraph';
 import {ActionCard} from '../../../../common/components/action-card';
 
 import icon1 from '../../../../assets/img/card-icon/icon1.png';
 import icon2 from '../../../../assets/img/card-icon/icon2.png';
 import icon3 from '../../../../assets/img/card-icon/icon3.png';
-import {NoteParagraph} from '../../../../common/components/note-paragraph';
 
 const Root = styled.div`
   backgroundcolor: '#f1f5f8';
@@ -21,13 +21,14 @@ const CardTitle = styled.div`
   font-weight: bold;
 
   &:before {
-    content: "''";
+    content: "";
     position: absolute;
     width: 50px;
     height: 50px;
+    margin-top: -60px;
+    left: 50%;
+    transform: translate(-50%);
     background-size: cover;
-    margin-top: -70px;
-    margin-left: 15px;
     background-repeat: no-repeat;
   }
 `;
@@ -36,7 +37,6 @@ const CardTitleIcon = styled(CardTitle).attrs((props) => ({img: props.img}))`
   margin-top: 165px;
 
   &:before {
-    margin-left: 22px;
     background-image: url(${(props) => props.img});
   }
 `;
