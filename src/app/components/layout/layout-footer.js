@@ -70,7 +70,7 @@ export function LayoutFooter() {
         </SocialLinkBlock>
         <InfoBlock>
           <InfoBlockItem>
-            <InfoBlockHeader>kora studio</InfoBlockHeader>
+            <InfoBlockHeader>mora studio</InfoBlockHeader>
             <InfoBlockContent>
               <p>35 elm st</p>
               <p>Rugaong, 12569</p>

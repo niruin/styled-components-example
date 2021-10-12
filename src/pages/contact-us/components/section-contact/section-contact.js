@@ -83,7 +83,7 @@ export function SectionContact() {
   return (
     <>
       <Container direction="column">
-        <SectionHeaderStyled>Kora Inc.</SectionHeaderStyled>
+        <SectionHeaderStyled>Mora Inc.</SectionHeaderStyled>
         <NoteParagraphWrapper>
           <NoteParagraph>
             Arkitube has a goal of hand roasting the best coffee. They view specialty coffee as an art.The company was
@@ -104,8 +104,8 @@ export function SectionContact() {
             </InfoBlock>
             <InfoBlock>
               <div>P: 123 5698 745- 56</div>
-              <div>E: hello@kora.ie</div>
-              <div>sales@kora.ie</div>
+              <div>E: hello@mora.ie</div>
+              <div>sales@mora.ie</div>
             </InfoBlock>
           </InfoBlockWrap>
 
@@ -118,8 +118,8 @@ export function SectionContact() {
             </InfoBlock>
             <InfoBlock>
               <div>P: 123 5698 745- 56</div>
-              <div>E: hello@kora.ie</div>
-              <div>sales@kora.ie</div>
+              <div>E: hello@mora.ie</div>
+              <div>sales@mora.ie</div>
             </InfoBlock>
           </InfoBlockWrap>
         </div>

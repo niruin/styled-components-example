@@ -101,7 +101,7 @@ export function SectionTeam() {
               <TeamBlockRightSubHeader>Mark Waugh</TeamBlockRightSubHeader>
               <TeamBlockRightDetailParagraph>
                 Mark is the coolest person yet so talented that he had a hard time in the Fox River State Penitentiary
-                along with the two members of KORA mafia.
+                along with the two members of MORA mafia.
               </TeamBlockRightDetailParagraph>
               <SocialBlock>
                 <LinkButton>Facebook</LinkButton>
