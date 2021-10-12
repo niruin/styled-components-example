@@ -6,7 +6,7 @@ import {Container} from '../../components/container';
 import {SectionHeader} from '../../components/section-header';
 
 const Root = styled.div`
-  padding: 100px 0;
+  padding: 60px 0;
   background-color: #f1f5f8;
 `;
 

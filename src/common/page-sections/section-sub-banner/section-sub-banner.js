@@ -7,6 +7,7 @@ import {Container} from '../../components/container';
 
 const Root = styled.div`
   padding: 80px 0;
+  margin-bottom: 30px;
   background: url(${banner}) fixed center center no-repeat;
   width: 100%;
   background-size: cover;
