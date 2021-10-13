@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import {NavbarItem} from './navbar-item';
+
 import {Container} from '../../../common/components/container';
+import {history} from '../../../common/routing';
 
 import {device} from '../../../styles/common';
 
@@ -30,13 +32,18 @@ const Logo = styled.div`
   margin: 22px 0 15px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media ${device.tablet} {
+    margin: 16px 0 15px calc(50% - 52px);
+    transform: translate(-43px);
+  }
 `;
 
 const Hamburger = styled.img`
   display: none;
   width: 34px;
   height: 34px;
-  margin: 15px auto 12px;
+  margin: 16px 10px 0px;
   background-repeat: no-repeat;
   cursor: pointer;
 
@@ -44,6 +51,11 @@ const Hamburger = styled.img`
     display: block;
   }
 `;
+
+const MenuPanel = styled.div`
+  display: flex;
+  flex-direction: row;
+`
 
 const WrapperNavbarItems = styled.div`
   display: flex;
@@ -97,15 +109,21 @@ export function Navbar() {
     onClose: PropTypes.func,
   };
 
-  function DropOutBlock({children}) {
-    return <DropOutBlockStyle onTouchEnd={handleCloseMenu}>{children}</DropOutBlockStyle>;
+  function DropOutBlock({path, children}) {
+    const redirect = () => {
+      history.push(path);
+    }
+
+    return <DropOutBlockStyle onClick={redirect} onTouchEnd={handleCloseMenu}>{children}</DropOutBlockStyle>;
   }
 
   return (
     <AppBar>
       <Container justify="space-between">
-        <Logo />
-        <Hamburger widthScreen={widthScreen} onClick={toggleShowMenu} src={hamburger} />
+        <MenuPanel>
+          <Hamburger widthScreen={widthScreen} onClick={toggleShowMenu} src={hamburger} />
+          <Logo />
+        </MenuPanel>
         <WrapperNavbarItems widthScreen={widthScreen} open={isShowMenu}>
           <NavbarItem path="/" title="home">
             <DropOutBlock path="/"> Home</DropOutBlock>
@@ -114,7 +132,7 @@ export function Navbar() {
             <DropOutBlock path="/">Index3</DropOutBlock>
           </NavbarItem>
           <NavbarItem path="/pages" title="pages">
-            <DropOutBlock path="/home">Home</DropOutBlock>
+            <DropOutBlock path="/">Home</DropOutBlock>
             <DropOutBlock path="/about">About us</DropOutBlock>
             <DropOutBlock path="/services">Services</DropOutBlock>
             <DropOutBlock path="/portfolio">Portfolio</DropOutBlock>
@@ -141,7 +159,7 @@ export function Navbar() {
             <DropOutBlock path="/">Index1</DropOutBlock>
             <DropOutBlock path="/">Index2</DropOutBlock>
           </NavbarItem>
-          <NavbarItem path="/contact" title="contact us" />
+          <NavbarItem onClick={handleCloseMenu} path="/contact" title="contact us" />
         </WrapperNavbarItems>
       </Container>
     </AppBar>

@@ -21,7 +21,7 @@ const ExpansionPanel = styled.div`
   padding: 0 15px;
 `;
 
-export function NavbarItem({path, title, children}) {
+export function NavbarItem({path, title, children, onClick}) {
   const [expanded, setExpanded] = useState(false);
 
   const handleMouseOver = () => {
@@ -34,6 +34,9 @@ export function NavbarItem({path, title, children}) {
 
   const handleMouseClick = () => {
     setExpanded(!expanded);
+    if(onClick) {
+      onClick();
+    }
   };
 
   return (
