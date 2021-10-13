@@ -21,6 +21,11 @@ export const ExtendButton = styled.div`
     color: ${colors.mediumGray};
     transition: all 0.4s ease-in-out;
   }
+  
+  &:active {
+    transition: all 0s ease-in-out;
+    font-weight: bold;
+  }
 `;
 
 ExtendButton.propTypes = {

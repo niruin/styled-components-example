@@ -17,6 +17,10 @@ export const LinkButton = styled.div`
     transition: border-color 0.5s linear;
     cursor: pointer;
   }
+  
+  &:active {
+    font-weight: bold;
+  }
 
   @media ${device.tablet} {
     margin: 10px 20px;
