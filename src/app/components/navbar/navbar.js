@@ -6,11 +6,11 @@ import {NavbarItem} from './navbar-item';
 
 import {Container} from '../../../common/components/container';
 import {history} from '../../../common/routing';
-
 import {device} from '../../../styles/common';
 
 import logo from '../../../assets/img/logo.png';
 import hamburger from '../../../assets/img/hamburger.png';
+import cross from '../../../assets/svg/cross.svg';
 
 const AppBar = styled.div`
   position: fixed;
@@ -121,7 +121,7 @@ export function Navbar() {
     <AppBar>
       <Container justify="space-between">
         <MenuPanel>
-          <Hamburger widthScreen={widthScreen} onClick={toggleShowMenu} src={hamburger} />
+          <Hamburger widthScreen={widthScreen} onClick={toggleShowMenu} src={isShowMenu ? cross : hamburger} />
           <Logo />
         </MenuPanel>
         <WrapperNavbarItems widthScreen={widthScreen} open={isShowMenu}>
