@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {Container} from '../../../../common/components/container';
-
-import img from '../../../../assets/img/artwork/img1.jpg';
-import {colors} from '../../../../styles/common';
 import {SectionHeader} from '../../../../common/components/section-header';
 import {NoteParagraph} from '../../../../common/components/note-paragraph';
+
+import {colors} from '../../../../styles/common';
+
+import img from '../../../../assets/img/artwork/img1.jpg';
 
 const ContentBlock = styled.div`
   flex-basis: 50%;
@@ -14,8 +15,7 @@ const ContentBlock = styled.div`
   padding: 30px 30px 30px 0;
 
   &:nth-child(2) {
-    background: url(${img});
-    background-repeat: no-repeat;
+    background: url(${img}) no-repeat;
     background-size: cover;
   }
 `;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {colors} from '../../../styles/common';
 
 export const SectionHeader = styled.div`
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 40px;
   font-weight: bold;
   color: ${colors.black};

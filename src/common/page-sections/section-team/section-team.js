@@ -19,19 +19,18 @@ const TeamBlock = styled.div`
   font-size: 20px;
   line-height: 40px;
   font-weight: 100;
-  font-family: MerriweatherLightItalic;
+  font-family: MerriweatherLightItalic, sans-serif;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 `;
 
 const TeamBlockLeft = styled.div`
-  background: url(${photo1});
+  background: url(${photo1}) no-repeat;
   width: 365px;
   max-width: 100%;
   min-height: 500px;
   background-size: contain;
-  background-repeat: no-repeat;
   flex-shrink: 0;
 `;
 
@@ -54,7 +53,7 @@ const SocialBlock = styled.div`
 
 const TeamBlockRightDetailParagraph = styled.p`
   font-size: 16px;
-  font-family: Merriweather;
+  font-family: Merriweather, sans-serif;
   line-height: 30px;
   margin-top: 0;
   margin-bottom: 12px;
@@ -81,11 +80,11 @@ const IntroBlockRightPersons = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   text-transform: uppercase;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 `;
 
 const TeamBlockRightSubHeader = styled.h2`
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   margin-bottom: 0;
 `;
 

@@ -11,18 +11,18 @@ const Root = styled.div`
   background: url(${banner}) fixed center center no-repeat;
   width: 100%;
   background-size: cover;
-  font-family: RobotoThin;
+  font-family: RobotoThin, sans-serif;
 `;
 
 const Title = styled.p`
-  font-weight: 100px;
+  font-weight: normal;
   margin-bottom: 0;
   margin-top: 15px;
   font-size: 72px;
 `;
 
 const SubTitle = styled.p`
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   margin-top: 0;
   font-size: 14px;
 `;
@@ -33,7 +33,7 @@ SectionSubBanner.propTypes = {
   className: PropTypes.string,
 };
 
-export function SectionSubBanner({title, subTitle, className}) {
+export function SectionSubBanner({title, subTitle}) {
   return (
     <Root>
       <Container direction="column">

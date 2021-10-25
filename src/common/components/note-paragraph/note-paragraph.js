@@ -6,5 +6,5 @@ export const NoteParagraph = styled.p`
   margin: 0;
   font-size: 14px;
   line-height: 30px;
-  font-family: Merriweather;
+  font-family: Merriweather, sans-serif;
 `;

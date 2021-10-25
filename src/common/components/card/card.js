@@ -38,7 +38,7 @@ const HeadBlock = styled.div`
 
 const PriceBlock = styled.div`
   font-size: 30px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   text-transform: uppercase;
   color: ${colors.black};
   font-weight: bold;
@@ -47,7 +47,7 @@ const PriceBlock = styled.div`
 
 const TitleBlock = styled.div`
   font-size: 16px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   text-transform: uppercase;
   color: ${colors.black};
   font-weight: bold;
@@ -56,7 +56,7 @@ const TitleBlock = styled.div`
 
 const ConditionBlock = styled.div`
   color: ${colors.gray};
-  font-family: Merriweather;
+  font-family: Merriweather, sans-serif;
   font-size: 14px;
   line-height: 40px;
   margin: 25px 0 30px;
@@ -75,7 +75,7 @@ Card.propTypes = {
 
 const LinkButtonStyled = styled(LinkButton)`
   font-size: 16px;
-  font-family: Merriweather;
+  font-family: Merriweather, sans-serif;
 `;
 
 export function Card({title, price, children}) {

@@ -43,7 +43,7 @@ const SectionBlockImg = styled(SectionBlockChild).attrs((props) => ({img: props.
 `;
 
 const SubHeaderBlock = styled.div`
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 14px;
   margin-bottom: 20px;
@@ -52,7 +52,7 @@ const SubHeaderBlock = styled.div`
 
 const BlockParagraph = styled.p`
   font-size: 14px;
-  font-family: Merriweather;
+  font-family: Merriweather, sans-serif;
   margin-top: 20px;
   line-height: 30px;
   color: ${colors.gray};

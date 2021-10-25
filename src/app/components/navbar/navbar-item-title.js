@@ -9,7 +9,7 @@ import {history} from '../../../common/routing';
 const Title = styled.div`
   text-transform: uppercase;
   font-size: 14px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   margin-top: 16px;
   margin-bottom: 15px;
   padding-top: 22px;

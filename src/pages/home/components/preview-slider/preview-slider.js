@@ -8,21 +8,17 @@ import arrow from '../../../../assets/svg/arrow.svg';
 const Root = styled.div`
   width: 100%;
   height: 100vh;
-  background: url(${slide2});
-  background-position: center;
+  background: url(${slide2}) center;
   position: relative;
-  backgroundsize: cover;
 `;
 
 const Fade = styled.div`
   width: 100%;
   height: 100vh;
   visibility: visible;
-  opacity: 1;
   transition: opacity ${(props) => props.timeout}s linear;
   opacity: ${(props) => (props.in === 'true' ? 0 : 1)};
-  background: url(${slide1});
-  background-position: center;
+  background: url(${slide1}) center;
   background-size: cover;
 `;
 

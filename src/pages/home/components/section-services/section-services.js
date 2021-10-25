@@ -23,8 +23,7 @@ const IntroBlock = styled.div`
 `;
 
 const IntroBlockChild = styled(IntroBlock).attrs((props) => ({img: props.img}))`
-  background: url(${(props) => props.img});
-  background-position: center;
+  background: url(${(props) => props.img}) center;
   background-size: cover;
   height: 600px;
 
@@ -35,8 +34,7 @@ const IntroBlockChild = styled(IntroBlock).attrs((props) => ({img: props.img}))`
 
 const IntroBlockContent = styled.div`
   max-width: 620px;
-  padding-bottom: 40px;
-  padding: 90px;
+  padding: 90px 90px 40px;
 
   @media ${device.tablet} {
     padding: 90px 0;
@@ -46,18 +44,18 @@ const IntroBlockContent = styled.div`
 const IntroBlockHeader = styled.h2`
   font-size: 60px;
   font-weight: bold;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 `;
 
 const IntroBlockSubHeader = styled.p`
   font-size: 16px;
-  font-family: Merriweather;
+  font-family: Merriweather, sans-serif;
   font-weight: bold;
 `;
 
 const IntroBlockParagraph = styled.p`
   font-size: 14px;
-  font-family: Merriweather;
+  font-family: Merriweather, sans-serif;
   padding-left: 20px;
   margin-top: 30px;
   border-left: 10px solid #292f33;
@@ -68,7 +66,7 @@ const IntroBlockParagraph = styled.p`
 const IntroBlockFourHeader = styled.div`
   font-size: 30px;
   font-weight: bold;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 `;
 
 const IntroBlockFourBricks = styled.div`
@@ -86,7 +84,7 @@ const IntroBlockFourBrickUnit = styled.div`
 
 const IntroBlockFourBrickUnitParagraph = styled.p`
   font-size: 14px;
-  font-family: Merriweather;
+  font-family: Merriweather, sans-serif;
   line-height: 30px;
   flex-basis: 50%;
   color: ${colors.gray};

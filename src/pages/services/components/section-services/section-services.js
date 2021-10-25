@@ -24,7 +24,7 @@ const CardTitle = styled.div`
   font-size: 16px;
   margin: 90px auto;
   text-transform: uppercase;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: bold;
 
   &:before {
@@ -61,7 +61,7 @@ const NoteParagraphStyled = styled(NoteParagraph)`
 
 const LoremIpsum = "I never thought I could feel so free doing it our way. Nothin's gonna turn us back.";
 
-function Card(icon, title, text = LoremIpsum) {
+function Card(icon, title) {
   return (
     <ActionCard>
       <CardTitleIcon img={icon}>{title}</CardTitleIcon>

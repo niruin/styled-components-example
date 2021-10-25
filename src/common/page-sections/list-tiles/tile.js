@@ -43,14 +43,14 @@ const TileContent = styled.div`
 const TileHeader = styled.h2`
   margin: 0;
   text-transform: uppercase;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   color: ${colors.white};
   font-style: normal;
 `;
 
 const TileDescription = styled.p`
-  font-family: Merriweather;
+  font-family: Merriweather, sans-serif;
   font-size: 14px;
   color: ${colors.gray};
 `;

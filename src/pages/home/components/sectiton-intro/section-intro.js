@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import {Container} from '../../../../common/components/container';
 import {ExtendButton} from '../../../../common/components/extend-button';
+
 import {colors, device} from '../../../../styles/common';
 
 const Root = styled.div`
@@ -22,7 +23,7 @@ const IntroBlock = styled.div`
   line-height: 40px;
   color: ${colors.black};
   font-weight: 100;
-  font-family: Merriweather;
+  font-family: Merriweather, sans-serif;
 `;
 
 const ExtendButtonStyled = styled(ExtendButton)`

@@ -36,8 +36,7 @@ const Root = styled.div.attrs((props) => ({
 `;
 
 const CloseButton = styled.div`
-  background: url(${sprite});
-  background-repeat: no-repeat;
+  background: url(${sprite}) no-repeat;
   background-position-y: -45px;
   background-position-x: -90px;
   width: 45px;
@@ -49,7 +48,7 @@ const CloseButton = styled.div`
   opacity: 0.7;
   transition: opacity 0.2s ease-in-out;
 
-  &:hover: {
+  &:hover {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
   }

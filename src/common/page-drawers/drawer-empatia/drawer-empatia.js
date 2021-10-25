@@ -32,14 +32,13 @@ const Root = styled.div`
 const AppBar = styled.div`
   background-color: white;
   color: black;
-  box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.2);
   min-height: 74px;
 `;
 
 const CloseBtn = styled.div`
   margin-left: -22px;
-  background: url(${sprite});
-  background-repeat: no-repeat;
+  background: url(${sprite}) no-repeat;
   background-position-y: -0;
   background-position-x: -90px;
   width: 45px;
@@ -67,7 +66,7 @@ const NoteTitle = styled.h6`
   margin: 0;
   line-height: 30px;
   text-transform: uppercase;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 `;
 
 const WrapRubrics = styled.div`
@@ -99,7 +98,7 @@ const WrapRubrics = styled.div`
 const RubricHeader = styled.div`
   font-size: 30px;
   text-transform: none;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: bold;
   margin: 20px 0;
 `;
@@ -109,14 +108,14 @@ const TextBolder = styled.p`
   text-transform: uppercase;
   font-weight: bold;
   line-height: 50px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   margin-top: 30px;
 `;
 
 const SectionHeaderStyled = styled(SectionHeader)`
   font-size: 60px;
   padding-top: 80px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 `;
 
 const ExtendButtonWrapper = styled.div`

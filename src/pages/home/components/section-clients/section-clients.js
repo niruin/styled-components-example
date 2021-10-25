@@ -17,7 +17,7 @@ const Root = styled.div`
 const Title = styled.div`
   margin: 0 0 50px;
   font-weight: bold;
-  font-family: Merriweather;
+  font-family: Merriweather, sans-serif;
   font-size: 16px;
   text-align: center;
 `;

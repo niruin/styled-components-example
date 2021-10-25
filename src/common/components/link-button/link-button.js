@@ -6,7 +6,7 @@ export const LinkButton = styled.div`
   margin: 0 20px;
   font-size: 14px;
   padding-bottom: 4px;
-  font-family: Merriweather;
+  font-family: Merriweather, sans-serif;
   font-style: italic;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   transition: border-color 0.5s linear;

@@ -5,11 +5,11 @@ import {LinkButton} from '../../../../common/components/link-button';
 import {Container} from '../../../../common/components/container';
 import {SectionHeader} from '../../../../common/components/section-header';
 import {NoteParagraph} from '../../../../common/components/note-paragraph';
+
 import {colors} from '../../../../styles/common';
 
 const Block = styled.div`
-  font-family: Roboto;
-  margin-bottom: 0;
+  font-family: Roboto, sans-serif;
   border-bottom: 1px solid ${colors.gray};
   text-align: center;
   max-width: 800px;

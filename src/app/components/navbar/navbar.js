@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -18,20 +18,14 @@ const AppBar = styled.div`
   z-index: 1;
   background-color: white;
   color: black;
-  box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.2);
-
-  @media ${device.tablet} {
-    position: static;
-  }
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.2);
 `;
 
 const Logo = styled.div`
-  background: url(${logo});
+  background: url(${logo}) no-repeat center;
   height: 33px;
   min-width: 86px;
   margin: 22px 0 15px;
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media ${device.tablet} {
     margin: 16px 0 15px calc(50% - 52px);
@@ -43,7 +37,7 @@ const Hamburger = styled.img`
   display: none;
   width: 34px;
   height: 34px;
-  margin: 16px 10px 0px;
+  margin: 16px 10px 0;
   background-repeat: no-repeat;
   cursor: pointer;
 
@@ -88,13 +82,7 @@ const DropOutBlockStyle = styled.div`
 `;
 
 export function Navbar() {
-  const [widthScreen, setWidthScreen] = useState(window.document.body.offsetWidth);
   const [isShowMenu, toggleIsShowMenu] = useState(false);
-  const widthScroll = 17;
-
-  useEffect(() => {
-    window.addEventListener('resize', () => setWidthScreen(window.document.body.offsetWidth + widthScroll)); // TODO do remake
-  }, []);
 
   const toggleShowMenu = () => {
     toggleIsShowMenu(!isShowMenu);
@@ -121,10 +109,10 @@ export function Navbar() {
     <AppBar>
       <Container justify="space-between">
         <MenuPanel>
-          <Hamburger widthScreen={widthScreen} onClick={toggleShowMenu} src={isShowMenu ? cross : hamburger} />
+          <Hamburger onClick={toggleShowMenu} src={isShowMenu ? cross : hamburger} />
           <Logo />
         </MenuPanel>
-        <WrapperNavbarItems widthScreen={widthScreen} open={isShowMenu}>
+        <WrapperNavbarItems open={isShowMenu}>
           <NavbarItem path="/" title="home">
             <DropOutBlock path="/"> Home</DropOutBlock>
             <DropOutBlock path="/">Index1</DropOutBlock>

@@ -13,7 +13,7 @@ const ExpansionDetails = styled.div`
 
   @media ${device.tablet} {
     position: static;
-  } ;
+  }
 `;
 
 const ExpansionPanel = styled.div`

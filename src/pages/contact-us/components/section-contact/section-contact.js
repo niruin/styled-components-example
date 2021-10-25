@@ -22,7 +22,7 @@ const SubSecondTitle = styled.div`
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   margin-top: 30px;
 `;
 
@@ -34,7 +34,7 @@ const InfoBlockWrap = styled.div`
 const InfoBlock = styled.div`
   padding-right: 40px;
   font-size: 14px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 `;
 
 const ButtonsWrap = styled.div`

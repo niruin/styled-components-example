@@ -5,6 +5,7 @@ import {LinkButton} from '../../../../common/components/link-button';
 import {Container} from '../../../../common/components/container';
 import {history} from '../../../../common/routing';
 import {SectionHeader} from '../../../../common/components/section-header';
+
 import {device} from '../../../../styles/common';
 
 const Root = styled.div`
@@ -29,8 +30,7 @@ const WrapperLinkButtons = styled.div`
   }
 
   @media ${device.mobileS} {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
   } ;
 `
 

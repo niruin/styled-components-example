@@ -10,14 +10,14 @@ import icon2 from '../../../../assets/img/card-icon/icon2.png';
 import icon3 from '../../../../assets/img/card-icon/icon3.png';
 
 const Root = styled.div`
-  backgroundcolor: '#f1f5f8';
+  background-color: #f1f5f8;
 `;
 
 const CardTitle = styled.div`
   margin-top: 90px;
   font-size: 16px;
   text-transform: uppercase;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: bold;
 
   &:before {
@@ -54,7 +54,7 @@ const NoteParagraphStyled = styled(NoteParagraph)`
 
 const LoremIpsum = "I never thought I could feel so free doing it our way. Nothin's gonna turn us back.";
 
-function Card(icon, title, text = LoremIpsum) {
+function Card(icon, title) {
   return (
     <ActionCard dark={true}>
       <CardTitleIcon img={icon}>{title}</CardTitleIcon>
