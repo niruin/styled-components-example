@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
@@ -63,11 +63,11 @@ Modal.propTypes = {
 export function Modal({onClose, children, drawer}) {
   const [isOpenDrawer, setIsOpenDrawer] = useState(false);
 
-  const handleClose = () => {
+  const handleClose = useCallback( () => {
     if (onClose) {
       onClose();
     }
-  };
+  },[onClose]);
 
   useEffect(() => {
     const handleKeyDown = (key) => {
@@ -84,7 +84,7 @@ export function Modal({onClose, children, drawer}) {
       document.body.style.overflow = 'auto';
       window.document.removeEventListener('keydown', handleKeyDown);
     };
-  });
+  }, [drawer, handleClose]);
 
   return (
     <Portal root="modal-root">
