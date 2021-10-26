@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 
 import {Container} from '../../../../common/components/container';
 import {ExtendButton} from '../../../../common/components/extend-button';
+import {Modal} from '../../../../common/components/modal';
+import {Plug} from '../../../../common/modals/plug';
 
 import {colors, device} from '../../../../styles/common';
 
@@ -32,17 +34,32 @@ const ExtendButtonStyled = styled(ExtendButton)`
 `;
 
 export function SectionIntro() {
+  const [isOpenModal, setModal] = useState(false);
+
+  const onSetOpenModal = () => {
+    setModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setModal(false);
+  };
+
   return (
     <Root>
       <IntroBlock>
-        <Container direction="column">
+        <Container direction='column'>
           <p>
             We understand the importance of approaching each work integrally and believe in the power of
             <strong> simple and easy communication.</strong>
           </p>
-          <ExtendButtonStyled>Know More</ExtendButtonStyled>
+          <ExtendButtonStyled onClick={onSetOpenModal}>Know More</ExtendButtonStyled>
         </Container>
       </IntroBlock>
+      {isOpenModal &&
+        <Modal onClose={handleCloseModal}>
+          <Plug onClose={handleCloseModal}/>
+        </Modal>
+      }
     </Root>
   );
 }

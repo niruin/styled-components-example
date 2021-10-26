@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 
 import {Container} from '../../../../common/components/container';
 import {ExtendButton} from '../../../../common/components/extend-button';
+import {Modal} from '../../../../common/components/modal';
+import {Plug} from '../../../../common/modals/plug';
 
 import {colors, device} from '../../../../styles/common';
 import services1 from '../../../../assets/img/services1.jpg';
@@ -91,6 +93,16 @@ const IntroBlockFourBrickUnitParagraph = styled.p`
 `;
 
 export function SectionServices() {
+  const [isOpenModal, setModal] = useState(false);
+
+  const onSetOpenModal = () => {
+    setModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setModal(false);
+  };
+
   return (
     <Root>
       <IntroBlock>
@@ -103,7 +115,12 @@ export function SectionServices() {
               as they struggled against each even harder than before, if that was possible, he could think of no once
               more possible for him to stay in bed and that the most sensible
             </IntroBlockParagraph>
-            <ExtendButton>View our Work</ExtendButton>
+            <ExtendButton onClick={onSetOpenModal}>View our Work</ExtendButton>
+            {isOpenModal &&
+              <Modal onClose={handleCloseModal}>
+                <Plug onClose={handleCloseModal}/>
+              </Modal>
+            }
           </IntroBlockContent>
         </Container>
       </IntroBlock>

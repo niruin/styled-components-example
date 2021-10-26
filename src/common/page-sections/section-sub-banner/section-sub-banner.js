@@ -19,12 +19,14 @@ const Title = styled.p`
   margin-bottom: 0;
   margin-top: 15px;
   font-size: 72px;
+  text-shadow: 1px 1px 3px white;
 `;
 
 const SubTitle = styled.p`
   font-family: Roboto, sans-serif;
   margin-top: 0;
   font-size: 14px;
+  text-shadow: 1px 1px 3px white;
 `;
 
 SectionSubBanner.propTypes = {

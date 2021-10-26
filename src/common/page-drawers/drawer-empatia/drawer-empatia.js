@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
@@ -7,6 +7,8 @@ import {ExtendButton} from '../../components/extend-button';
 import {Container} from '../../components/container';
 import {SectionHeader} from '../../components/section-header';
 import {NoteParagraph} from '../../components/note-paragraph';
+import {Modal} from '../../components/modal';
+import {Plug} from '../../modals/plug';
 import {colors, device} from '../../../styles/common';
 
 import sprite from '../../../assets/img/sprite.png';
@@ -47,11 +49,11 @@ const CloseBtn = styled.div`
   left: 50%;
   top: 16px;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 1;
   transition: opacity 0.2s ease-in-out;
 
   &:hover {
-    opacity: 1;
+    opacity: 0.7;
     transition: opacity 0.2s ease-in-out;
   }
 `;
@@ -139,14 +141,20 @@ export function DrawerEmpatia({onClose}) {
     }
   };
 
-  function CloseButton() {
-    return <CloseBtn onClick={handleClose} />;
-  }
+  const [isOpenModal, setModal] = useState(false);
+
+  const onSetOpenModal = () => {
+    setModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setModal(false);
+  };
 
   return (
     <Root>
       <AppBar>
-        <CloseButton />
+        <CloseBtn onClick={handleClose} />
       </AppBar>
       <SectionSubBanner title="EMPATIA STUDIO" bg={bg} subTitle="For 78 Years, it cannot just be odds in favor!" />
       <Container direction="column">
@@ -172,9 +180,14 @@ export function DrawerEmpatia({onClose}) {
             </NoteParagraph>
           </div>
           <ExtendButtonWrapper>
-            <ExtendButton>Get in touch</ExtendButton>
+            <ExtendButton onClick={onSetOpenModal}>Get in touch</ExtendButton>
+            {isOpenModal &&
+              <Modal onClose={handleCloseModal}>
+                <Plug onClose={handleCloseModal}/>
+              </Modal>
+            }
           </ExtendButtonWrapper>
-          <ExtendButtonWrapper>
+          <ExtendButtonWrapper onClick={onSetOpenModal}>
             <ExtendButton>Next Project</ExtendButton>
           </ExtendButtonWrapper>
         </WrapRubrics>

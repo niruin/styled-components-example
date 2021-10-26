@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 
 import {Container} from '../../../common/components/container';
 import {ExtendButton} from '../../../common/components/extend-button';
 import {LinkButton} from '../../../common/components/link-button';
+import {Modal} from '../../../common/components/modal';
+import {Plug} from '../../../common/modals/plug';
 
 import {device} from '../../../styles/common';
 import logo from '../../../assets/img/logo_circle.png';
@@ -56,6 +58,16 @@ const InfoBlockImg = styled.img`
 `;
 
 export function LayoutFooter() {
+  const [isOpenModal, setModal] = useState(false);
+
+  const onSetOpenModal = () => {
+    setModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setModal(false);
+  };
+
   return (
     <Root>
       <Container direction="column">
@@ -76,7 +88,7 @@ export function LayoutFooter() {
               <p>Rugaong, 12569</p>
               <p>Dublin</p>
             </InfoBlockContent>
-            <ExtendButton>Locate on map</ExtendButton>
+            <ExtendButton onClick={onSetOpenModal}>Locate on map</ExtendButton>
           </InfoBlockItem>
           <div align="center">
             <InfoBlockImg src={logo} alt="logo" />
@@ -88,7 +100,12 @@ export function LayoutFooter() {
               <p>E: hello@mora.com</p>
               <p>sales@mora.com</p>
             </InfoBlockContent>
-            <ExtendButton>Write to us</ExtendButton>
+            <ExtendButton onClick={onSetOpenModal}>Write to us</ExtendButton>
+            {isOpenModal &&
+              <Modal onClose={handleCloseModal}>
+                <Plug onClose={handleCloseModal}/>
+              </Modal>
+            }
           </InfoBlockItem>
         </InfoBlock>
       </Container>

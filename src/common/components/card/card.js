@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import {LinkButton} from '../link-button';
 import {colors, device} from '../../../styles/common';
+import {Modal} from '../modal';
+import {Plug} from '../../modals/plug';
 
 const Root = styled.div`
   flex-basis: 33%;
@@ -79,6 +81,16 @@ const LinkButtonStyled = styled(LinkButton)`
 `;
 
 export function Card({title, price, children}) {
+  const [isOpenModal, setModal] = useState(false);
+
+  const onSetOpenModal = () => {
+    setModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setModal(false);
+  };
+
   return (
     <Root>
       <HeadBlock>
@@ -87,7 +99,12 @@ export function Card({title, price, children}) {
       </HeadBlock>
       <ConditionBlock>{children}</ConditionBlock>
       <OrderBtn>
-        <LinkButtonStyled>Confirm Order</LinkButtonStyled>
+        <LinkButtonStyled onClick={onSetOpenModal}>Confirm Order</LinkButtonStyled>
+        {isOpenModal &&
+          <Modal onClose={handleCloseModal}>
+            <Plug onClose={handleCloseModal}/>
+          </Modal>
+        }
       </OrderBtn>
     </Root>
   );
