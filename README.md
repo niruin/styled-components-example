@@ -4,7 +4,7 @@ React styled-components example
 
 Simple site, for rendering styles was used styled-components
 
-https://niruin.github.io/react-styled-components-example
+https://niruin.github.io/styled-components-example
 
 ## Install
 
