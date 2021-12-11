@@ -26,5 +26,6 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     color: ${colors.black};
     font-family: MerriweatherRegular, serif;
+    background-color: white;
   }
 `;

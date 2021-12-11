@@ -11,7 +11,7 @@ import {device} from '../../../styles/common';
 import logo from '../../../assets/img/logo_circle.png';
 
 const Root = styled.div`
-  padding: 100px 0 50px;
+  padding: 80px 0;
   background-color: #f1f5f8;
 `;
 

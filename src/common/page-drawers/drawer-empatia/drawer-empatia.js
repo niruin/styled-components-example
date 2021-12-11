@@ -22,7 +22,6 @@ import img11 from '../../../assets/img/artwork/img11.jpg';
 import img12 from '../../../assets/img/artwork/img12.jpg';
 import img13 from '../../../assets/img/artwork/img13.jpg';
 import img14 from '../../../assets/img/artwork/img14.jpg';
-import img15 from '../../../assets/img/artwork/img15.jpg';
 import img16 from '../../../assets/img/artwork/img16.jpg';
 
 const Root = styled.div`
@@ -213,7 +212,7 @@ export function DrawerEmpatia({onClose}) {
         </WrapRubrics>
         <WrapRubrics>
           <MediumImage src={img14} alt="case" />
-          <MediumImage src={img15} alt="case" />
+          <MediumImage src={img13} alt="case" />
           <MediumImage src={img16} alt="case" />
         </WrapRubrics>
         <WrapRubrics>
